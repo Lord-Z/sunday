@@ -1,4 +1,4 @@
-# sunday功能包使用介绍
+# sunday功能包使用介绍以及开源
 
 
 
@@ -7,8 +7,7 @@ sunday我给自己机械臂的命名，原型是innfos的gluon机械臂。通过
 ## 个人环境
 
 首先介绍个人使用环境，博主使用的是Ubuntu18.04+gtx1660ti显卡+ros_melodic+cuda10.2+pytorch1.8+yolov5-6.1。环境配置的教程详见上一篇博客：
-
-[https://blog.csdn.net/qq_48427527/article/details/129201676?spm=1001.2014.3001.5502]: https://blog.csdn.net/qq_48427527/article/details/129201676?spm=1001.2014.3001.5502
+[https://blog.csdn.net/qq_48427527/article/details/129201676?spm=1001.2014.3001.5502](https://blog.csdn.net/qq_48427527/article/details/129201676?spm=1001.2014.3001.5502)
 
 
 
@@ -59,8 +58,12 @@ sunday_gazebo/launch/sunday_bringup_moveit_origin.launch
 ## yolov5_ros
 
 该功能包是我在csdn上边找到的，封装了yolov5，能以launch文件启动，并发布话题，个人感觉还不错。地址：
+[YoloV5 的ros功能包](https://blog.csdn.net/Chris121345/article/details/122563536?spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;utm_relevant_index=8)
 
-[https://blog.csdn.net/Chris121345/article/details/122563536?spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;utm_relevant_index=8]: https://blog.csdn.net/Chris121345/article/details/122563536?spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;utm_relevant_index=8	"YoloV5 的ros功能包"
+```
+git clone https://github.com/qq44642754a/Yolov5_ros.git
+```
+
 
 具体使用过程就是将训练好的权重放置进功能包中对应launch文件的路径下边，在launch文件中修改话题名称以及其它参数即可。
 
@@ -69,6 +72,10 @@ sunday_gazebo/launch/sunday_bringup_moveit_origin.launch
 ## vacuum_plugin
 
 vacuum_plugin是一个吸盘的插件，在urdf中插入该插件即可在gazebo中实现吸盘的功能。
+
+```
+git clone https://github.com/tatsuya-s/gazebo_ros_vacuum_gripper_debugger
+```
 
 在sunday_description/urdf/sunday.xacro第490行添加插件
 
@@ -91,6 +98,10 @@ vacuum_plugin是一个吸盘的插件，在urdf中插入该插件即可在gazebo
 
 realsense_ros_gazebo功能包是realsense的gazebo功能包，其仿真效果与实物相同，且其中包含多款realsense型号的模型文件，其中便包含本项目中使用的realsenseD435i摄像头，可以将原urdf中的摄像头删除，调用该功能包的模型进行替换。
 
+```
+git clone https://github.com/nilseuropa/realsense_ros_gazebo.git
+```
+
 在sunday_description/urdf/sunday.xacro第454行添加代码
 
 ```
@@ -106,7 +117,7 @@ realsense_ros_gazebo功能包是realsense的gazebo功能包，其仿真效果与
 
 gripper_model并不是一个功能包，这个包里有四个模型文件，对应视频中的三个多边形体以及，喂食过程中的人物张嘴闭嘴展板。模型文件的制作以及贴图的教程可以看我之前写的博客。博客地址：
 
-[https://blog.csdn.net/qq_48427527/article/details/124477608?spm=1001.2014.3001.5502]: https://blog.csdn.net/qq_48427527/article/details/124477608?spm=1001.2014.3001.5502
+[https://blog.csdn.net/qq_48427527/article/details/124477608?spm=1001.2014.3001.5502](https://blog.csdn.net/qq_48427527/article/details/124477608?spm=1001.2014.3001.5502)
 
 将四个模型拷贝放置到.gazebo/models路径，注意不能将整个包拷贝，仅将四个模型文件拷贝即可。
 
@@ -156,11 +167,16 @@ python grasp.py
 
 ## 开源地址
 
-```
+
 网盘链接：
-链接: https://pan.baidu.com/s/1thKsIPsyBFtpiPuAC-VgeA  密码: mogp
+链接: [https://pan.baidu.com/s/1thKsIPsyBFtpiPuAC-VgeA](https://pan.baidu.com/s/1thKsIPsyBFtpiPuAC-VgeA)  密码: mogp
 --来自百度网盘超级会员V3的分享
 
+github:
 
-```
 
+
+## 资料
+1.[YoloV5 的ros功能包](https://blog.csdn.net/Chris121345/article/details/122563536?spm=1001.2101.3001.6650.5&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-5-122563536-blog-123269882.pc_relevant_multi_platform_whitelistv1_exp2&amp;utm_relevant_index=8)
+2.[realsense_ros_gazebo](https://github.com/nilseuropa/realsense_ros_gazebo.git)
+3.[vacuum_plugin](https://github.com/tatsuya-s/gazebo_ros_vacuum_gripper_debugger)
