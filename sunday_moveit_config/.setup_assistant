@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: sunday_description
+    relative_path: urdf/sunday.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/sunday.srdf
+  CONFIG:
+    author_name: zyx
+    author_email: 1632122398@qq.com
+    generated_timestamp: 1657375555

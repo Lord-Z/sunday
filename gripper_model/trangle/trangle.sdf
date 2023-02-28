@@ -1,0 +1,55 @@
+<sdf version='1.6'>
+  <model name='trangle'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 -0 0 0 -0 0</pose>
+        <mass>0.138564</mass>
+        <inertia>
+          <ixx>6.58186e-05</ixx>
+          <ixy>7.4776e-21</ixy>
+          <ixz>1.07487e-20</ixz>
+          <iyy>6.58186e-05</iyy>
+          <iyz>5.2163e-21</iyz>
+          <izz>7.39e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://trangle/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l2_collision_1'>
+        <pose frame=''>0 0 0.025 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://trangle/meshes/l2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://trangle/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l2_visual_1'>
+        <pose frame=''>0 0 0.025 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://trangle/meshes/l2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

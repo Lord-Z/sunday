@@ -1,0 +1,55 @@
+<sdf version='1.6'>
+  <model name='star'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0.000133 -8.7e-05 0 0 -0 0</pose>
+        <mass>0.52982</mass>
+        <inertia>
+          <ixx>0.000718324</ixx>
+          <ixy>-1.68138e-06</ixy>
+          <ixz>-6.17275e-20</ixz>
+          <iyy>0.000716264</iyy>
+          <iyz>4.76456e-21</iyz>
+          <izz>0.00121382</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://star/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l2_collision_1'>
+        <pose frame=''>-0.000133 -8.7e-05 0.025 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://star/meshes/l2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://star/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l2_visual_1'>
+        <pose frame=''>-0.000133 -8.7e-05 0.025 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://star/meshes/l2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

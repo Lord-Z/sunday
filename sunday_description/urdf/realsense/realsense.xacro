@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="d435i">
+
+
+  <xacro:include filename="$(find sunday_description)/urdf/realsense/sunday_d435i.xacro" />
+  <xacro:sunday_d435i />
+
+  <joint name="sunday_d435i_base_joint" type="fixed">
+        <origin
+      xyz="-0.00068847 -0.06 -0.13"
+      rpy="-3.14 0 -1.5708" />
+    <parent link="link_5"/>
+    <child link="realsense"/>
+  </joint>
+
+</robot>

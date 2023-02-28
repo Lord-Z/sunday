@@ -1,0 +1,60 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/zyx/cat_ws/install_isolated/include/**",
+        "/home/zyx/friday_ws/devel/include/**",
+        "/home/zyx/use_ws/devel/include/**",
+        "/home/zyx/study_ws/devel/include/**",
+        "/home/zyx/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/zyx/catkin_ws/src/racecar/system/racecar/ackermann_cmd_mux/include/**",
+        "/home/zyx/catkin_ws/src/car/car_control/include/**",
+        "/home/zyx/catkin_ws/src/car/car_gazebo/include/**",
+        "/home/zyx/study_ws/src/ddynamic_reconfigure/include/**",
+        "/home/zyx/friday_ws/src/delamain/delamain_gazebo/include/**",
+        "/home/zyx/friday_ws/src/delamain/delamain_planning/include/**",
+        "/home/zyx/friday_ws/src/ros_gluon/gluon_control/include/**",
+        "/home/zyx/catkin_ws/src/racecar/system/hokuyo_node/include/**",
+        "/home/zyx/blog_ws/src/libot_project/libot_control/include/**",
+        "/home/zyx/blog_ws/src/libot_project/libot_description/include/**",
+        "/home/zyx/blog_ws/src/libot_project/libot_gazebo/include/**",
+        "/home/zyx/study_ws/src/mbot/mbot_bringup/include/**",
+        "/home/zyx/catkin_ws/src/mini_bot/mini_bot_gazebo/include/**",
+        "/home/zyx/catkin_ws/src/mini_bot/mini_bot_nav/include/**",
+        "/home/zyx/catkin_ws/src/mini_sim/mini_gazebo/include/**",
+        "/home/zyx/catkin_ws/src/mini_sim/mini_nav/include/**",
+        "/home/zyx/catkin_ws/src/mini_bot/multi_mini/include/**",
+        "/home/zyx/study_ws/src/probot_anno/probot_anno_ikfast_manipulator_plugin/include/**",
+        "/home/zyx/study_ws/src/probot_anno/probot_grasping/include/**",
+        "/home/zyx/blog_ws/src/raceblog_description/include/**",
+        "/home/zyx/blog_ws/src/racebot/racebot_control/include/**",
+        "/home/zyx/blog_ws/src/racebot/racebot_gazebo/include/**",
+        "/home/zyx/friday_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/zyx/friday_ws/src/sunday/realsense_ros_gazebo/include/**",
+        "/home/zyx/catkin_ws/src/racecar/system/serial/include/**",
+        "/home/zyx/catkin_ws/src/simcar_sw/sim_control/include/**",
+        "/home/zyx/catkin_ws/src/simcar_sw/sim_gazebo/include/**",
+        "/home/zyx/friday_ws/src/sunday/sunday_gazebo/include/**",
+        "/home/zyx/catkin_ws/src/tianracer_sim/tianracer_control/include/**",
+        "/home/zyx/friday_ws/src/sunday/vacuum_plugin/include/**",
+        "/home/zyx/catkin_ws/src/racecar/system/vesc/vesc_ackermann/include/**",
+        "/home/zyx/catkin_ws/src/racecar/system/vesc/vesc_driver/include/**",
+        "/home/zyx/catkin_ws/src/wheeltec/wheeltec_control/include/**",
+        "/home/zyx/catkin_ws/src/wheeltec/wheeltec_gazebo/include/**",
+        "/home/zyx/blog_ws/src/zbot/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

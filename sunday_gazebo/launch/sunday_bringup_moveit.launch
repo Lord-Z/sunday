@@ -1,0 +1,19 @@
+<launch>
+  
+    <!-- Launch Gazebo  -->
+    <include file="$(find sunday_gazebo)/launch/sunday_gazebo_world.launch" />
+
+    <!-- ros_control arm launch file -->
+    <include file="$(find sunday_gazebo)/launch/sunday_gazebo_states.launch" />   
+
+    <!-- ros_control trajectory control dof arm launch file -->
+    <include file="$(find sunday_gazebo)/launch/sunday_trajectory_controller.launch" />
+
+    <!-- moveit launch file -->
+    <include file="$(find sunday_moveit_config)/launch/moveit_planning_execution.launch">
+    </include>
+
+    <!-- yolo detect -->
+    <include file="$(find yolov5_ros)/launch/yolo_v5.launch" />
+    <include file="$(find yolov5_ros)/launch/yolo_v5_mouth.launch" />
+</launch>

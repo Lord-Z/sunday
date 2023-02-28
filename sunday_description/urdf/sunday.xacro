@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="sunday" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+    <link name="base_footprint">
+    </link>
+
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0041595 -0.019776 0.12"
+        rpy="0 0 0" />
+        <mass value="0.524001417146026" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+    <joint name="base_link2base_footprint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link"/>
+        <origin xyz="0 0 0.032" rpy="0 0 0" />
+    </joint>
+
+
+
+  <link name="link_1">
+    <inertial>
+      <origin
+        xyz="4.4076E-07 0.0088489 0.03981"
+        rpy="0 0 0" />
+        <mass value="0.166259789544396" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.0041595 -0.12 0.026051"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.79"
+      upper="2.79"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="5.2117E-07 0.050183 0.046384"
+        rpy="0 0 0" />
+        <mass value="0.316094041078938" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.054512 0.049518"
+      rpy="-0.0041482 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 -0.99999 -0.0041482" />
+    <limit
+      lower="-1.54"
+      upper="1.54"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-2.3744E-06 0.013658 -0.095655"
+        rpy="0 0 0" />
+        <mass value="0.323135746651779" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0 -0.0008547 0.20604"
+      rpy="-3.1374 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-2.79"
+      upper="2.79"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-6.4344E-06 -0.026419 -0.014391"
+        rpy="0 0 0" />
+        <mass value="0.174947986817189" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0 -0.02136 -0.17442"
+      rpy="0 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.79"
+      upper="2.79"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.00020466 -0.017155 -0.036587"
+        rpy="0 0 0" />
+        <mass value="0.174947985033356" />
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint
+    name="joint_5"
+    type="revolute">
+    <origin
+      xyz="0 -0.03573 -0.044358"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-2.79"
+      upper="2.79"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 0 0"
+        rpy="0 0 0" />
+      <mass value="0.00001" />
+      <inertia ixx="10" ixy="0.0" ixz="0.0" iyy="10" iyz="0.0" izz="10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="0 -0.099358 -0.03573"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-2.79"
+      upper="2.79"
+      effort="30"
+      velocity="3.14" />
+  </joint>
+
+
+
+  <!-- <link
+    name="realsense">
+    <inertial>
+      <origin
+        xyz="-0.0096916 -7.0438E-05 -0.0032432"
+        rpy="0 0 0" />
+      <mass
+        value="0.10331" />
+      <inertia
+        ixx="7.3623E-05"
+        ixy="2.0488E-08"
+        ixz="-1.8002E-06"
+        iyy="7.2833E-05"
+        iyz="1.969E-08"
+        izz="7.3133E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/realsense.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.66667 0.69804 0.76863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://sunday_description/meshes/realsense.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+
+  <joint
+    name="realsense_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00068847 -0.054242 -0.12654"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link_5" />
+    <child
+      link="realsense" />
+    <axis
+      xyz="0 0 0" />
+  </joint> -->
+
+<!-- Used for fixing robot to Gazebo 'base_link' -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <origin
+      xyz="0 0 1.1"
+      rpy="0 0 0" />
+    <parent link="world"/>
+    <child link="base_footprint"/>
+  </joint>
+
+  <!-- <xacro:include filename="$(find sunday_description)/urdf/realsense/realsense.xacro"/> -->
+<xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
+<xacro:realsense_d435 sensor_name="camera" parent_link="link_5" rate="30">
+    <origin xyz="-0.00068847 -0.06 -0.13" rpy="-3.14 0 -1.5708"/>
+</xacro:realsense_d435>
+
+<!-- Transmissions for ROS Control -->
+<xacro:macro name="transmission_block" params="joint_name">
+  <transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="${joint_name}">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+</xacro:macro>
+
+<xacro:transmission_block joint_name="joint_1"/>
+<xacro:transmission_block joint_name="joint_2"/>
+<xacro:transmission_block joint_name="joint_3"/>
+<xacro:transmission_block joint_name="joint_4"/>
+<xacro:transmission_block joint_name="joint_5"/>
+<xacro:transmission_block joint_name="joint_6"/>
+
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/sunday</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+
+
+  <!-- vacuum_gripper plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_vacuum_gripper" filename="libvacuum_plugin.so">
+      <robotNamespace>/sunday/vacuum_gripper</robotNamespace>
+      <bodyName>link_6</bodyName>
+      <topicName>grasping</topicName>
+      <maxDistance>0.05</maxDistance>
+      <minDistance>0.03</minDistance>
+    </plugin>
+</gazebo>
+
+
+<gazebo reference="link_6">
+  <mu1>50</mu1>
+  <mu2>50</mu2>
+  <minDepth>0.003</minDepth>
+  <maxVel>0</maxVel>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+  <material>Gazebo/Grey</material>
+</gazebo>
+
+  
+</robot>
