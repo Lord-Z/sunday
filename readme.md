@@ -166,10 +166,8 @@ python grasp.py
 
 
 ## 开源地址
-github无法上传开源的三个功能包，因此我将所有功能包都打包放在百度网盘里面。
-
-网盘链接：
-链接: [https://pan.baidu.com/s/1thKsIPsyBFtpiPuAC-VgeA](https://pan.baidu.com/s/1thKsIPsyBFtpiPuAC-VgeA)  密码: mogp
+github无法上传开源的三个功能包，因此我将权重放置在百度网盘里面
+链接: https://pan.baidu.com/s/1zS2sZkfdtcU0EuDZvVxjQg  密码: sg0v
 --来自百度网盘超级会员V3的分享
 
 github:https://github.com/Lord-Z/sunday
