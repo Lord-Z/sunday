@@ -170,6 +170,10 @@ github无法上传开源的三个功能包，因此我将权重放置在百度�
 链接: https://pan.baidu.com/s/1zS2sZkfdtcU0EuDZvVxjQg  密码: sg0v
 --来自百度网盘超级会员V3的分享
 
+另外三个开源的功能包，已经配置好权重，放进Sunday一同进行编译
+链接: https://pan.baidu.com/s/1N2T7TLAK9QIbBxWjepwJ6w  密码: uvkv
+--来自百度网盘超级会员V3的分享
+
 github:https://github.com/Lord-Z/sunday
 
 
