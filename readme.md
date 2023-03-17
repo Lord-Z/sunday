@@ -173,6 +173,8 @@ github无法上传开源的三个功能包，因此我将权重放置在百度�
 另外三个开源的功能包，已经配置好权重，放进Sunday一同进行编译
 链接: https://pan.baidu.com/s/1N2T7TLAK9QIbBxWjepwJ6w  密码: uvkv
 --来自百度网盘超级会员V3的分享
+在放进百度云盘之前，博主将yolov5_ros/weights路径下的best.pt重命名为了polygon.pt用于方便区分权重，给各位造成一定的困扰，请各位在使用时将launch文件中的路径名自行修改。
+
 
 github:https://github.com/Lord-Z/sunday
 
